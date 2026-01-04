@@ -1,0 +1,35 @@
+baseURL = "https://ColeNoice.github.io/blog2"
+languageCode = "zh-cn"
+title = "My Blog"
+theme = "PaperMod"
+
+[params]
+  author = "Your Name"
+  description = "My Blog"
+  
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 1
+  
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 2
+    
+  [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 3
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = true
+    
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
